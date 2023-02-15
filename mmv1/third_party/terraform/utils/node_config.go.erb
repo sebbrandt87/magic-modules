@@ -163,6 +163,7 @@ func schemaNodeConfig() *schema.Schema {
 				"resource_labels": {
 					Type:        schema.TypeMap,
 					Optional:    true,
+                                        Computed:    true,
 					Elem:        &schema.Schema{Type: schema.TypeString},
 					Description: `The GCE resource labels (a map of key/value pairs) to be applied to the node pool.`,
 				},
